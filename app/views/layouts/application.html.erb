@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FirstRails</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+
+</head>
+
+<body>
+
+<div class="wrapper">
+
+
+<div class="top">
+<h1>Welcome to the Jungle</h1><%= image_tag 'rareparrot.gif' %>
+</div></div>
+
+<hr style="margin-top: 1px; margin-bottom: 1px;">
+<nav>
+<%= link_to 'Home', root_path %> ::
+<%= link_to 'Products', products_path %> ::
+<%= link_to 'Lorem', lorem_path %>
+</nav>
+<hr style="margin-top: 1px; margin-bottom: 1px;">
+<br>
+<div class="middle">
+
+
+<%= yield %>
+
+</div>
+<hr>
+<nav>
+<%= link_to 'Contact us', contact_path%>::
+<%= link_to 'About us', about_path%>
+</nav>
+</body>
+</html>

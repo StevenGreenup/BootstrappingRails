@@ -1,0 +1,10 @@
+<h1><%= @product.name %></h1>
+<%= @product.picture%>
+<%= number_to_currency @product.price %>
+<%= @product.description %>
+<br>
+<br>
+<br>
+<br>
+
+<%= link_to 'Back to products', products_path %>
